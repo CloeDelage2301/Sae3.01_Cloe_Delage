@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.P.C. - Jean Romy</title>
+    <link href="/src/style.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-white">
+    <!-- Navigation Bar -->
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-5">
+            <section class="flex items-center justify-between">
+                <section class="flex items-center gap-8 ">
+                    <!-- Logo -->
+                    <figure class="flex-shrink-0"><a href="index.html">
+                            <img alt="A.P.C. Logo" class="h-2 lg:h-4 w-14"
+                                src="/public/assets/logo.png" />
+                        </a>
+                    </figure>
+
+                    <!-- Main Navigation - Desktop -->
+                    <section class="hidden lg:flex items-center space-x-8 xl:space-x-12">
+                        <a href="index.html"
+                            class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">TOUTES
+                            LES CATÉGORIES</a>
+                        <a href="denim.html"
+                            class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">DENIM</a>
+                        <a class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">JUPES &
+                            ROBES FEMMES</a>
+                        <a class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">PULLS &
+                            SWEATS</a>
+                    </section>
+                </section>
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <!-- Secondary Navigation - Desktop -->
+                <nav class="hidden lg:flex items-center space-x-0">
+                    <button class="p-2 hover:bg-gray-50 rounded"><a href="inscription.html">
+                        <img alt="Account" class="w-6 h-6"
+                            src="/public/assets/compte.png" />
+                            </a>
+                    </button>
+                    <button class="p-2 hover:bg-gray-50 rounded"><a href="panier.html">
+                        <img alt="Cart" class="w-5 h-5"
+                            src="/public/assets/panier.png" />
+                            </a>
+                    </button>
+                </nav>
+            </section>
+
+
+
+            <!-- Mobile Navigation -->
+            <section class="lg:hidden hidden" id="mobile-menu">
+                <nav class="py-4 space-y-4 border-t border-gray-100">
+                    <button class="block w-full text-left font-inter-bold text-sm text-gray-400 py-2">
+                        TOUTES LES CATÉGORIES
+                    </button>
+                    <button class="block w-full text-left font-inter-bold text-sm text-gray-400 py-2">
+                        DENIM
+                    </button>
+                    <button class="block w-full text-left font-inter-bold text-sm text-gray-400 py-2">
+                        JUPES & ROBES FEMMES
+                    </button>
+                    <button class="block w-full text-left font-inter-bold text-sm text-gray-400 py-2">
+                        PULLS & SWEATS
+                    </button>
+                </nav>
+            </section>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Back Button -->
+        <button class="flex items-center gap-3 mb-8 hover:opacity-70 transition-opacity"><a href="index.html">
+                <img alt="Back arrow" class="w-4 h-4"
+                    src="http://localhost:3845/assets/34a3d2379c91b8b4a7630f6e9b3c23f68229e084.svg" />
+                <span class="font-arial-regular text-sm text-black">Retour au catalogue</span>
+            </a>
+        </button>
+
+        <!-- Product Detail Grid -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16">
+            <!-- Product Images -->
+            <article class="space-y-5">
+                <!-- Main Image -->
+                <figure class="aspect-[560/804] overflow-hidden">
+                    <img alt="Jean Romy - Vue principale" class="w-full h-full object-cover"
+                        src="http://localhost:3845/assets/c44c36252551b3558dd278b49890229c735d4fb0.png" />
+                </figure>
+
+                <!-- Thumbnail Images -->
+                <section class="flex gap-2.5 overflow-x-auto">
+                    <button class="flex-shrink-0 border-2 border-black bg-gray-100 p-0.5">
+                        <img alt="Jean Romy - Thumbnail 1" class="w-24 h-32 object-cover"
+                            src="http://localhost:3845/assets/c44c36252551b3558dd278b49890229c735d4fb0.png" />
+                    </button>
+                    <button class="flex-shrink-0 border border-gray-200 p-0.5 hover:border-gray-400 transition-colors">
+                        <img alt="Jean Romy - Vue 2" class="w-24 h-32 object-cover"
+                            src="http://localhost:3845/assets/3314b8e7e3779e13747b6f2bd2ec9983304f9fe4.png" />
+                    </button>
+                    <button class="flex-shrink-0 border border-gray-200 p-0.5 hover:border-gray-400 transition-colors">
+                        <img alt="Jean Romy - Vue 3" class="w-24 h-32 object-cover"
+                            src="http://localhost:3845/assets/b769a0d0684885da94361f0dbcfe7e57967c550b.png" />
+                    </button>
+                    <button class="flex-shrink-0 border border-gray-200 p-0.5 hover:border-gray-400 transition-colors">
+                        <img alt="Jean Romy - Vue 4" class="w-24 h-32 object-cover"
+                            src="http://localhost:3845/assets/8560692aa654fbecb605ddc79cc8bf184a46f52a.png" />
+                    </button>
+                </section>
+            </article>
+
+            <!-- Product Information -->
+            <article class="space-y-8">
+                <!-- Product Title and Price -->
+                <section>
+                    <h1 class="font-inter-bold text-base text-black uppercase mb-2">Jean Romy</h1>
+                    <p class="font-inter-bold text-base text-black">270.00 €</p>
+                </section>
+
+                <!-- Product Description -->
+                <p class="font-inter-regular text-base text-black">
+                    Jean droit à taille haute en denim japonais brut.
+                </p>
+
+                <!-- Color Selection -->
+                <section class="space-y-4">
+                    <h3 class="font-inter-bold text-base text-black uppercase">Couleur</h3>
+                    <p class="font-inter-regular text-base text-black">BORDEAUX</p>
+                    <section class="flex gap-2.5">
+                        <button class="w-14 h-10 bg-gray-400 border border-gray-300"></button>
+                        <button class="w-14 h-10 bg-[#a92b2b] border-2 border-black"></button>
+                    </section>
+                </section>
+
+                <!-- Size Selection -->
+                <section class="space-y-4">
+                    <h3 class="font-inter-bold text-base text-black uppercase">Taille</h3>
+                    <section class="flex flex-wrap gap-0">
+                        <button
+                            class="bg-black text-white font-inter-regular text-base px-5 py-3 w-16 h-12 flex items-center justify-center">
+                            XXS
+                        </button>
+                        <button
+                            class="border border-gray-300 text-black font-inter-regular text-base px-5 py-3 w-16 h-12 flex items-center justify-center hover:border-gray-500 transition-colors">
+                            XS
+                        </button>
+                        <button
+                            class="border border-gray-300 text-black font-inter-regular text-base px-5 py-3 w-16 h-12 flex items-center justify-center hover:border-gray-500 transition-colors">
+                            S
+                        </button>
+                        <button
+                            class="border border-gray-300 text-black font-inter-regular text-base px-5 py-3 w-16 h-12 flex items-center justify-center hover:border-gray-500 transition-colors">
+                            M
+                        </button>
+                        <button
+                            class="border border-gray-300 text-black font-inter-regular text-base px-5 py-3 w-16 h-12 flex items-center justify-center hover:border-gray-500 transition-colors">
+                            L
+                        </button>
+                        <button
+                            class="border border-gray-300 text-black font-inter-regular text-base px-5 py-3 w-16 h-12 flex items-center justify-center hover:border-gray-500 transition-colors">
+                            XL
+                        </button>
+                        <button
+                            class="border border-gray-300 text-black font-inter-regular text-base px-5 py-3 w-16 h-12 flex items-center justify-center hover:border-gray-500 transition-colors">
+                            XXL
+                        </button>
+                    </section>
+                </section>
+
+                <!-- Add to Cart Button -->
+                <button
+                    class="w-full bg-black text-white font-inter-bold text-sm uppercase py-4 hover:bg-gray-800 transition-colors"><a
+                        href="panier.html">
+                        Ajouter au panier
+                    </a>
+                </button>
+
+                <!-- Product Details Accordion -->
+                <section class="border-b border-gray-200">
+                    <button
+                        class="w-full flex items-center justify-between py-4 font-inter-bold text-sm text-black uppercase hover:text-gray-600 transition-colors"
+                        id="description-toggle">
+                        Description
+                        <svg class="w-4 h-4 transform transition-transform" id="description-icon" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <section class="pb-4 hidden" id="description-content">
+                        <p class="font-inter-regular text-sm text-black mb-4">
+                            Le jean Romy incarne l'élégance décontractée de la garde-robe A.P.C. Confectionné en denim
+                            japonais premium, ce jean à coupe droite offre un ajustement parfait qui s'améliore avec le
+                            temps.
+                        </p>
+                        <ul class="space-y-2 pl-5">
+                            <li class="font-inter-regular text-sm text-black">• Coupe droite à taille haute.</li>
+                            <li class="font-inter-regular text-sm text-black">• Cinq poches.</li>
+                            <li class="font-inter-regular text-sm text-black">• Denim brut non lavé.</li>
+                            <li class="font-inter-regular text-sm text-black">• Logo A.P.C. brodé en ton sur ton
+                                en bas
+                                à gauche.</li>
+                            <li class="font-inter-regular text-sm text-black">• Fermeture par boutons.</li>
+                            <li class="font-inter-regular text-sm text-black">• 100% coton denim japonais de
+                                Kurashiki.
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+
+                <!-- Materials and Care Accordion -->
+                <section class="border-b border-gray-200">
+                    <button
+                        class="w-full flex items-center justify-between py-4 font-inter-bold text-sm text-black uppercase hover:text-gray-600 transition-colors"
+                        id="materials-toggle">
+                        Composition et entretien
+                        <svg class="w-4 h-4 transform transition-transform" id="materials-icon" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <section class="pb-4 hidden" id="materials-content">
+                        <section class="space-y-2.5">
+                            <h4 class="font-inter-bold text-sm text-black">Matériaux:</h4>
+                            <ul class="space-y-1.5 pl-5">
+                                <li class="font-inter-regular text-sm text-black">• 100% Coton biologique</li>
+                                <li class="font-inter-regular text-sm text-black">• Denim brut non traité de 13,5
+                                    oz
+                                </li>
+                                <li class="font-inter-regular text-sm text-black">• Fabriqué au Japon</li>
+                            </ul>
+                        </section>
+                    </section>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+      <footer class="bg-white border-t border-gray-100 py-12 lg:py-16 mt-16">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-12">
+                <!-- Logo and Links -->
+                <section class="flex flex-col lg:flex-row items-start lg:items-center gap-8 lg:gap-12">
+                    <figure class="flex-shrink-0">
+                        <img alt="A.P.C. Logo" class="h-8 lg:h-10"
+                            src="/public/assets/logo.png" />
+                    </figure>
+
+                    <nav class="flex flex-col sm:flex-row gap-4 lg:gap-8">
+                        <a href="https://www.apc.fr/pages/conditions-generales-de-vente"
+                            class="font-inter-bold text-sm text-[#1c1c1c] uppercase hover:text-gray-600 transition-colors">
+                            Conditions Générales de vente
+                        </a>
+                        <a href="https://www.apc.fr/pages/contact"
+                            class="font-inter-bold text-sm text-black hover:text-gray-600 transition-colors">
+                            Nous contacter
+                        </a>
+                        <a href="https://www.apc.fr/policies/privacy-policy"
+                            class="font-inter-bold text-sm text-[#1c1c1c] uppercase hover:text-gray-600 transition-colors">
+                            Politique de confidentialité
+                        </a>
+                    </nav>
+                </section>
+
+                <!-- Social Media Links -->
+                <nav class="flex items-center space-x-4">
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="Instagram" class="w-6 h-6"
+                            src="/public/assets/instagram.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="YouTube" class="w-6 h-6"
+                            src="/public/assets/youtube.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="TikTok" class="w-6 h-6"
+                            src="/public/assets/tiktok.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="Facebook" class="w-6 h-6"
+                            src="/public/assets/facebook.png" />
+                    </a>
+                </nav>
+            </section>
+
+            <!-- Copyright -->
+            <section
+                class="mt-8 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <a href="https://www.apc.fr"
+                    class="font-inter-medium text-sm text-[#1c1c1c] hover:text-gray-600 transition-colors">
+                    www.apc.fr
+                </a>
+                <p class="font-inter-medium text-sm text-[#1c1c1c]">
+                    © copyright 2025
+                </p>
+            </section>
+        </section>
+    </footer>
+
+
+</body>
+
+</html>

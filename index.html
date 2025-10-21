@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.P.C.</title>
+    <link href="/src/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+    <!-- Navigation Bar -->
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-5">
+            <section class="flex items-center justify-between">
+                <section class="flex items-center gap-8 ">
+                    <!-- Logo -->
+                    <figure class="flex-shrink-0"><a href="index.html">
+                            <img alt="A.P.C. Logo" class="h-2 lg:h-4 w-14"
+                                src="/public/assets/logo.png" />
+                        </a>
+                    </figure>
+
+                    <!-- Main Navigation - Desktop -->
+                    <section class="hidden lg:flex items-center space-x-8 xl:space-x-12">
+                        <a href="index.html"
+                            class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">TOUTES
+                            LES CATÉGORIES</a>
+                        <a href="denim.html"
+                            class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">DENIM</a>
+                        <a class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">JUPES &
+                            ROBES FEMMES</a>
+                        <a class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">PULLS &
+                            SWEATS</a>
+                    </section>
+                </section>
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <!-- Secondary Navigation - Desktop -->
+                 <nav class="hidden lg:flex items-center space-x-0">
+                    <button class="p-2 hover:bg-gray-50 rounded"><a href="inscription.html">
+                        <img alt="Account" class="w-6 h-6"
+                            src="/public/assets/compte.png" />
+                            </a>
+                    </button>
+                    <button class="p-2 hover:bg-gray-50 rounded"><a href="panier.html">
+                        <img alt="Cart" class="w-5 h-5"
+                            src="/public/assets/panier.png" />
+                            </a>
+                    </button>
+                </nav>
+
+                <!-- Mobile Navigation -->
+                <section class="lg:hidden hidden" id="mobile-menu">
+                    <nav class="py-4 space-y-4 border-t border-gray-100">
+                        <button> <a href="index.html"
+                                class="block w-full text-left font-inter-bold text-sm text-black py-at-2"></a>
+                            TOUTES LES CATÉGORIES
+                        </button>
+                        <button><a href="index.html"
+                                class="block w-full text-left font-inter-bold text-sm text-gray-400 py-2"></a>
+                            DENIM
+                        </button>
+                        <button class="block w-full text-left font-inter-bold text-sm text-gray-400 py-2">
+                            JUPES & ROBES FEMMES
+                        </button>
+                        <button class="block w-full text-left font-inter-bold text-sm text-gray-400 py-2">
+                            PULLS & SWEATS
+                        </button>
+                    </nav>
+
+                </section>
+            </section>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-[#d0cfd5] py-12 lg:py-16">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 xl:gap-20">
+                <!-- Text Content -->
+                <article class="flex-1 text-center lg:text-left">
+                    <h1
+                        class="font-arial-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-color-black mb-6 lg:mb-8 leading-tight">
+                        Notre coup de coeur
+                    </h1>
+                    <p
+                        class="font-arial-regular text-lg sm:text-xl lg:text-2xl text-black leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        A.P.C. et Marc Jacobs lancent une capsule exclusive de pièces revisitant le style College.
+                        Construite sur une amitié de plus de trente ans entre Jean Touitou et Marc Jacobs, elle réunit
+                        leurs univers parisiens et new-yorkais.
+                    </p>
+                </article>
+
+                <!-- Product Image -->
+                <figure class="flex-shrink-0">
+                    <img alt="Jean Elisabeth" class="w-full max-w-sm lg:max-w-md xl:max-w-lg object-cover"
+                        src="/public/assets/jean the elisabeth.png" />
+                </figure>
+            </section>
+        </section>
+    </section>
+
+    <!-- Product Grid Section 1 -->
+    <section class="py-16 lg:py-20">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 xl:gap-16">
+                <!-- Product Card 1 -->
+                <article class="group"><a href="description_produits.html">
+                        <figure class="aspect-[306/440] overflow-hidden mb-2">
+                            <img alt="Jean Romy"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                src="/public/assets/jean romy 1.png" />
+                        </figure>
+                        <section class="flex items-center justify-between mb-2">
+                            <h3 class="font-inter-bold text-sm text-black uppercase">Jean Romy</h3>
+                            <span
+                                class="bg-black text-white text-xs font-inter-bold px-3 py-1 rounded uppercase">Denim</span>
+                        </section>
+                        <p class="font-inter-regular text-sm text-black">270.00 €</p>
+                    </a>
+                </article>
+
+
+                <!-- Product Card 2 -->
+                <article class="group">
+                    <figure class="aspect-[306/440] overflow-hidden mb-2">
+                        <img alt="Gilet Alyson"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            src="/public/assets/Gilet alyson.png" />
+                    </figure>
+                    <section class="flex items-center justify-between mb-2">
+                        <h3 class="font-inter-bold text-sm text-black uppercase">Gilet Alyson</h3>
+                        <span class="bg-black text-white text-xs font-inter-bold px-3 py-1 rounded uppercase">Pulls
+                            &
+                            Sweats</span>
+                    </section>
+                    <p class="font-inter-regular text-sm text-black">270.00 €</p>
+                </article>
+
+                <!-- Product Card 3 -->
+                <article class="group">
+                    <figure class="aspect-[306/440] overflow-hidden mb-2">
+                        <img alt="Jupe Moss"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            src="/public/assets/jupe moss.png" />
+                    </figure>
+                    <section class="flex items-center justify-between mb-2">
+                        <h3 class="font-inter-bold text-sm text-black uppercase">Jupe Moss</h3>
+                        <span class="bg-black text-white text-xs font-inter-bold px-3 py-1 rounded uppercase">Jupes
+                            &
+                            Robes</span>
+                    </section>
+                    <p class="font-inter-regular text-sm text-black">195.00 €</p>
+                </article>
+            </section>
+        </section>
+    </section>
+
+    <!-- Product Grid Section 2 -->
+    <section class="py-16 lg:py-20">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 xl:gap-16">
+                <!-- Product Card 4 -->
+                <article class="group">
+                    <figure class="aspect-[306/440] overflow-hidden mb-2">
+                        <img alt="Pull Thea"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            src="/public/assets/pull thea.png" />
+                    </figure>
+                    <section class="flex items-center justify-between mb-2">
+                        <h3 class="font-inter-bold text-sm text-black uppercase">Pull Thea</h3>
+                        <span class="bg-black text-white text-xs font-inter-bold px-3 py-1 rounded uppercase">Pulls
+                            &
+                            Sweats</span>
+                    </section>
+                    <p class="font-inter-regular text-sm text-black">270.00 €</p>
+                </article>
+
+                <!-- Product Card 5 -->
+                <article class="group">
+                    <figure class="aspect-[306/440] overflow-hidden mb-2">
+                        <img alt="Jean Elisabeth"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            src="/public/assets/jean the elisabeth.png" />
+                    </figure>
+                    <section class="flex items-center justify-between mb-2">
+                        <h3 class="font-inter-bold text-sm text-black uppercase">The Jean Elisabeth</h3>
+                        <span
+                            class="bg-black text-white text-xs font-inter-bold px-3 py-1 rounded uppercase">Denim</span>
+                    </section>
+                    <p class="font-inter-regular text-sm text-black">250.00 €</p>
+                </article>
+
+                <!-- Product Card 6 -->
+                <article class="group">
+                    <figure class="aspect-[306/440] overflow-hidden mb-2">
+                        <img alt="Mini Jupe"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            src="/public/assets/minu jupe.png" />
+                    </figure>
+                    <section class="flex items-center justify-between mb-2">
+                        <h3 class="font-inter-bold text-sm text-black uppercase">Mini Jupe</h3>
+                        <span class="bg-black text-white text-xs font-inter-bold px-3 py-1 rounded uppercase">Jupes
+                            &
+                            Robes</span>
+                    </section>
+                    <p class="font-inter-regular text-sm text-black">160.00 €</p>
+                </article>
+            </section>
+        </section>
+    </section>
+
+    <!-- Product Grid Section 3 -->
+    <section class="py-16 lg:py-20">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 xl:gap-16">
+                <!-- Product Card 7 -->
+                <article class="group">
+                    <figure class="aspect-[306/440] overflow-hidden mb-2">
+                        <img alt="Sweat Angelica"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            src="/public/assets/sweat angelica.png" />
+                    </figure>
+                    <section class="flex items-center justify-between mb-2">
+                        <h3 class="font-inter-bold text-sm text-black uppercase">Sweat Angelica</h3>
+                        <span class="bg-black text-white text-xs font-inter-bold px-3 py-1 rounded uppercase">Pulls
+                            &
+                            Sweats</span>
+                    </section>
+                    <p class="font-inter-regular text-sm text-black">195.00 €</p>
+                </article>
+
+                <!-- Product Card 8 -->
+                <article class="group">
+                    <figure class="aspect-[306/440] overflow-hidden mb-2">
+                        <img alt="Robe Annelie"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            src="/public/assets/robe anelie.png" />
+                    </figure>
+                    <section class="flex items-center justify-between mb-2">
+                        <h3 class="font-inter-bold text-sm text-black uppercase">Robe Annelie</h3>
+                        <span class="bg-black text-white text-xs font-inter-bold px-3 py-1 rounded uppercase">Jupes
+                            &
+                            Robes</span>
+                    </section>
+                    <p class="font-inter-regular text-sm text-black">310.00 €</p>
+                </article>
+
+                <!-- Product Card 9 -->
+                <article class="group">
+                    <figure class="aspect-[306/440] overflow-hidden mb-2">
+                        <img alt="Jean Romy"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            src="/public/assets/jean romy.png" />
+                    </figure>
+                    <section class="flex items-center justify-between mb-2">
+                        <h3 class="font-inter-bold text-sm text-black uppercase">Jean Romy</h3>
+                        <span
+                            class="bg-black text-white text-xs font-inter-bold px-3 py-1 rounded uppercase">Denim</span>
+                    </section>
+                    <p class="font-inter-regular text-sm text-black">270.00 €</p>
+                </article>
+            </section>
+        </section>
+    </section>
+
+    <!-- Footer -->
+      <footer class="bg-white border-t border-gray-100 py-12 lg:py-16 mt-16">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-12">
+                <!-- Logo and Links -->
+                <section class="flex flex-col lg:flex-row items-start lg:items-center gap-8 lg:gap-12">
+                    <figure class="flex-shrink-0">
+                        <img alt="A.P.C. Logo" class="h-8 lg:h-10"
+                            src="/public/assets/logo.png" />
+                    </figure>
+
+                    <nav class="flex flex-col sm:flex-row gap-4 lg:gap-8">
+                        <a href="https://www.apc.fr/pages/conditions-generales-de-vente"
+                            class="font-inter-bold text-sm text-[#1c1c1c] uppercase hover:text-gray-600 transition-colors">
+                            Conditions Générales de vente
+                        </a>
+                        <a href="https://www.apc.fr/pages/contact"
+                            class="font-inter-bold text-sm text-black hover:text-gray-600 transition-colors">
+                            Nous contacter
+                        </a>
+                        <a href="https://www.apc.fr/policies/privacy-policy"
+                            class="font-inter-bold text-sm text-[#1c1c1c] uppercase hover:text-gray-600 transition-colors">
+                            Politique de confidentialité
+                        </a>
+                    </nav>
+                </section>
+
+                <!-- Social Media Links -->
+                <nav class="flex items-center space-x-4">
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="Instagram" class="w-6 h-6"
+                            src="/public/assets/instagram.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="YouTube" class="w-6 h-6"
+                            src="/public/assets/youtube.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="TikTok" class="w-6 h-6"
+                            src="/public/assets/tiktok.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="Facebook" class="w-6 h-6"
+                            src="/public/assets/facebook.png" />
+                    </a>
+                </nav>
+            </section>
+
+            <!-- Copyright -->
+            <section
+                class="mt-8 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <a href="https://www.apc.fr"
+                    class="font-inter-medium text-sm text-[#1c1c1c] hover:text-gray-600 transition-colors">
+                    www.apc.fr
+                </a>
+                <p class="font-inter-medium text-sm text-[#1c1c1c]">
+                    © copyright 2025
+                </p>
+            </section>
+        </section>
+    </footer>
+</body>
+
+</html>

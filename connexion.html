@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.P.C. - Se connecter</title>
+   <link href="/src/style.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-white">
+    <!-- Navigation Bar -->
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-5">
+            <section class="flex items-center justify-between">
+                <section class="flex items-center gap-8 ">
+                    <!-- Logo -->
+                    <figure class="flex-shrink-0"><a href="index.html">
+                            <img alt="A.P.C. Logo" class="h-2 lg:h-4 w-14"
+                                src="/public/assets/logo.png"  />
+                        </a>
+                    </figure>
+
+                    <!-- Main Navigation - Desktop -->
+                    <section class="hidden lg:flex items-center space-x-8 xl:space-x-12">
+                        <a href="index.html"
+                            class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">TOUTES
+                            LES CATÉGORIES</a>
+                        <a href="denim.html"
+                            class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">DENIM</a>
+                        <a class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">JUPES &
+                            ROBES FEMMES</a>
+                        <a class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">PULLS &
+                            SWEATS</a>
+                    </section>
+                </section>
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <!-- Secondary Navigation - Desktop -->
+                 <nav class="hidden lg:flex items-center space-x-0">
+                    <button class="p-2 hover:bg-gray-50 rounded"><a href="inscription.html">
+                        <img alt="Account" class="w-6 h-6"
+                            src="/public/assets/compte.png" />
+                            </a>
+                    </button>
+                    <button class="p-2 hover:bg-gray-50 rounded"><a href="panier.html">
+                        <img alt="Cart" class="w-5 h-5"
+                            src="/public/assets/panier.png" />
+                            </a>
+                    </button>
+                </nav>
+            </section>
+
+            <!-- Mobile Navigation -->
+            <section class="lg:hidden hidden" id="mobile-menu">
+                <nav class="py-4 space-y-4 border-t border-gray-100">
+                    <button class="block w-full text-left font-inter-bold text-sm text-black py-2">
+                        TOUTES LES CATÉGORIES
+                    </button>
+                    <button class="block w-full text-left font-inter-bold text-sm text-gray-400 py-2">
+                        DENIM
+                    </button>
+                    <button class="block w-full text-left font-inter-bold text-sm text-gray-400 py-2">
+                        JUPES & ROBES FEMMES
+                    </button>
+                    <button class="block w-full text-left font-inter-bold text-sm text-gray-400 py-2">
+                        PULLS & SWEATS
+                    </button>
+                </nav>
+            </section>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="bg-gray-100 min-h-screen flex items-center justify-center py-12">
+        <section class="bg-white border border-gray-200 rounded-2xl shadow-lg w-full max-w-md mx-4">
+            <section class="p-12 space-y-8">
+                <!-- Title -->
+                <h1 class="font-arial-regular text-base text-black text-center">Se connecter</h1>
+
+                <!-- Login Form -->
+                <form class="space-y-6" ">
+                    <!-- Email Input -->
+                    <label class=" block">
+                    <input type="email"
+                        class="w-full h-9 bg-[#f3f3f5] border-0 rounded-lg px-3 py-1 font-arial-regular text-sm text-black"
+                        placeholder="Email" value="cloedelage@gmail.com" required />
+                    </label>
+
+                    <!-- Password Input -->
+                    <label class="block">
+                        <input type="password"
+                            class="w-full h-9 bg-[#f3f3f5] border-0 rounded-lg px-3 py-1 font-arial-regular text-sm text-black"
+                            placeholder="Mot de passe" value="*********" required />
+                    </label>
+
+                    <!-- Sign Up Link -->
+                    <p class="text-center font-arial-regular text-sm text-black">
+                        Vous avez pas de compte ?
+                        <a href="inscription.html"
+                            class="underline hover:text-gray-600 transition-colors">S'inscrire</a>
+                    </p>
+
+                    <!-- Submit Button -->
+                    <button type="submit"
+                        class="w-full h-9 bg-black text-white font-arial-regular text-sm rounded-lg hover:bg-gray-800 transition-colors"><a
+                            href="profil.html">
+                            Continuer
+                        </a>
+                    </button>
+
+                    <!-- Legal Links -->
+                    <section class="flex justify-between text-center">
+                        <a href="#"
+                            class="font-arial-regular text-sm text-black underline hover:text-gray-600 transition-colors">
+                            Politique de confidentialité
+                        </a>
+                        <a href="#"
+                            class="font-arial-regular text-sm text-black underline hover:text-gray-600 transition-colors">
+                            Conditions d'utilisation
+                        </a>
+                    </section>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+      <footer class="bg-white border-t border-gray-100 py-12 lg:py-16 mt-16">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-12">
+                <!-- Logo and Links -->
+                <section class="flex flex-col lg:flex-row items-start lg:items-center gap-8 lg:gap-12">
+                    <figure class="flex-shrink-0">
+                        <img alt="A.P.C. Logo" class="h-8 lg:h-10"
+                            src="/public/assets/logo.png" />
+                    </figure>
+
+                    <nav class="flex flex-col sm:flex-row gap-4 lg:gap-8">
+                        <a href="https://www.apc.fr/pages/conditions-generales-de-vente"
+                            class="font-inter-bold text-sm text-[#1c1c1c] uppercase hover:text-gray-600 transition-colors">
+                            Conditions Générales de vente
+                        </a>
+                        <a href="https://www.apc.fr/pages/contact"
+                            class="font-inter-bold text-sm text-black hover:text-gray-600 transition-colors">
+                            Nous contacter
+                        </a>
+                        <a href="https://www.apc.fr/policies/privacy-policy"
+                            class="font-inter-bold text-sm text-[#1c1c1c] uppercase hover:text-gray-600 transition-colors">
+                            Politique de confidentialité
+                        </a>
+                    </nav>
+                </section>
+
+                <!-- Social Media Links -->
+                <nav class="flex items-center space-x-4">
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="Instagram" class="w-6 h-6"
+                            src="/public/assets/instagram.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="YouTube" class="w-6 h-6"
+                            src="/public/assets/youtube.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="TikTok" class="w-6 h-6"
+                            src="/public/assets/tiktok.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="Facebook" class="w-6 h-6"
+                            src="/public/assets/facebook.png" />
+                    </a>
+                </nav>
+            </section>
+
+            <!-- Copyright -->
+            <section
+                class="mt-8 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <a href="https://www.apc.fr"
+                    class="font-inter-medium text-sm text-[#1c1c1c] hover:text-gray-600 transition-colors">
+                    www.apc.fr
+                </a>
+                <p class="font-inter-medium text-sm text-[#1c1c1c]">
+                    © copyright 2025
+                </p>
+            </section>
+        </section>
+    </footer>
+</body>
+
+</html>

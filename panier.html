@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.P.C. - Panier</title>
+    <link href="/src/style.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-white">
+    <!-- Navigation Bar -->
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-5">
+            <section class="flex items-center justify-between">
+                <section class="flex items-center gap-8 ">
+                    <!-- Logo -->
+                    <figure class="flex-shrink-0"><a href="index.html">
+                            <img alt="A.P.C. Logo" class="h-2 lg:h-4 w-14"
+                                src="/public/assets/logo.png"  />
+                        </a>
+                    </figure>
+
+                    <!-- Main Navigation - Desktop -->
+                    <section class="hidden lg:flex items-center space-x-8 xl:space-x-12">
+                        <a href="index.html"
+                            class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">TOUTES
+                            LES CATÉGORIES</a>
+                        <a href="denim.html"
+                            class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">DENIM</a>
+                        <a class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">JUPES &
+                            ROBES FEMMES</a>
+                        <a class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">PULLS &
+                            SWEATS</a>
+                    </section>
+                </section>
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                < <nav class="hidden lg:flex items-center space-x-0">
+                    <button class="p-2 hover:bg-gray-50 rounded"><a href="inscription.html">
+                        <img alt="Account" class="w-6 h-6"
+                            src="/public/assets/compte.png" />
+                            </a>
+                    </button>
+                    <button class="p-2 hover:bg-gray-50 rounded"><a href="panier.html">
+                        <img alt="Cart" class="w-5 h-5"
+                            src="/public/assets/panier.png" />
+                            </a>
+                    </button>
+                </nav>
+            </section>
+
+            <!-- Mobile Navigation -->
+            <section class="lg:hidden hidden" id="mobile-menu">
+                <nav class="py-4 space-y-4 border-t border-gray-100">
+                    <button class="block w-full text-left font-inter-bold text-sm text-gray-400 py-2">
+                        TOUTES LES CATÉGORIES
+                    </button>
+                    <button class="block w-full text-left font-inter-bold text-sm text-gray-400 py-2">
+                        DENIM
+                    </button>
+                    <button class="block w-full text-left font-inter-bold text-sm text-gray-400 py-2">
+                        JUPES & ROBES FEMMES
+                    </button>
+                    <button class="block w-full text-left font-inter-bold text-sm text-gray-400 py-2">
+                        PULLS & SWEATS
+                    </button>
+                </nav>
+            </section>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Back Button -->
+        <button class="flex items-center gap-2 mb-8 hover:opacity-70 transition-opacity"><a
+                href="description_produits.html">
+                <span class="font-arial-regular text-sm text-black"> < Retour</span>
+            </a>
+        </button>
+
+        <!-- Page Title -->
+        <h1 class="font-arial-bold text-base text-black mb-12">PANIER</h1>
+
+        <!-- Cart Content -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+            <!-- Products Section -->
+            <article class="lg:col-span-2">
+                <h2 class="font-arial-regular text-base text-black uppercase mb-6">Produits</h2>
+
+                <!-- Product Item -->
+                <section class="border-b border-gray-200 pb-6 mb-6">
+                    <section class="flex gap-4 items-center">
+                        <!-- Product Image -->
+                        <figure class="w-32 h-48 flex-shrink-0">
+                            <img alt="Jean Romy" class="w-full h-full object-cover bg-gray-100"
+                                src="/public/assets/jean romy 1.png" />
+                        </figure>
+
+                        <!-- Product Details -->
+                        <section class="flex-1">
+                            <section class="flex items-start justify-between mb-3">
+                                <h3 class="font-arial-regular text-base text-black uppercase">Jean Romy</h3>
+                                <button class="p-1 hover:bg-gray-100 rounded transition-colors" id="remove-item">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </button>
+                            </section>
+
+                            <p class="font-arial-regular text-base text-black mb-3">270.00 €</p>
+
+                            <section class="space-y-1 mb-4">
+                                <p class="font-arial-regular text-sm text-[#4a5565]">TAILLE: XXS</p>
+                                <p class="font-arial-regular text-sm text-[#4a5565]">COULEUR: Bordeaux</p>
+                            </section>
+
+                            <!-- Quantity Selector -->
+                            <section class="flex items-center gap-3">
+                                <span class="font-arial-regular text-sm text-black uppercase">Quantité:</span>
+                                <section class="border border-gray-300 flex items-center">
+                                    <button class="p-3 hover:bg-gray-50 transition-colors" id="decrease-qty">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M20 12H4"></path>
+                                        </svg>
+                                    </button>
+                                    <span
+                                        class="px-4 py-2 border-x border-gray-300 font-arial-regular text-base text-black"
+                                        id="quantity">1</span>
+                                    <button class="p-3 hover:bg-gray-50 transition-colors" id="increase-qty">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        </svg>
+                                    </button>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </article>
+
+            <!-- Order Summary -->
+            <aside class="lg:col-span-1">
+                <h2 class="font-arial-regular text-base text-black uppercase mb-12">Récapitulatif</h2>
+
+                <section class="space-y-4 mb-8">
+                    <section class="flex justify-between">
+                        <span class="font-arial-regular text-base text-black">Sous-total</span>
+                        <span class="font-arial-regular text-base text-black" id="subtotal">270 €</span>
+                    </section>
+                    <section class="flex justify-between">
+                        <span class="font-arial-regular text-base text-black">Livraison</span>
+                        <span class="font-arial-regular text-base text-black">offerte</span>
+                    </section>
+                    <hr class="border-gray-200">
+                    <section class="flex justify-between">
+                        <span class="font-arial-regular text-base text-black uppercase">Total (1 produit)</span>
+                        <span class="font-arial-regular text-base text-black" id="total">270 €</span>
+                    </section>
+                </section>
+
+                <!-- Checkout Button -->
+                <button
+                    class="w-full bg-black text-white font-arial-regular text-sm uppercase py-3 rounded-lg hover:bg-gray-800 transition-colors mb-6"><a
+                        href="livraison.html">
+                        Passer la commande
+                    </a>
+                </button>
+
+                <!-- Payment Methods -->
+                <section class="text-center">
+                    <p class="font-arial-regular text-sm text-black mb-2">Secure payment methods</p>
+                    <section class="flex gap-2 justify-center">
+                        <span class="bg-black text-white text-xs px-2 py-1 rounded">Apple Pay</span>
+                        <span class="bg-[#ff5f00] text-white text-xs px-2 py-1 rounded">MC</span>
+                        <span class="bg-[#1434cb] text-white text-xs px-2 py-1 rounded">VISA</span>
+                    </section>
+                </section>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Footer -->
+     <footer class="bg-white border-t border-gray-100 py-12 lg:py-16 mt-16">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-12">
+                <!-- Logo and Links -->
+                <section class="flex flex-col lg:flex-row items-start lg:items-center gap-8 lg:gap-12">
+                    <figure class="flex-shrink-0">
+                        <img alt="A.P.C. Logo" class="h-8 lg:h-10"
+                            src="/public/assets/logo.png" />
+                    </figure>
+
+                    <nav class="flex flex-col sm:flex-row gap-4 lg:gap-8">
+                        <a href="https://www.apc.fr/pages/conditions-generales-de-vente"
+                            class="font-inter-bold text-sm text-[#1c1c1c] uppercase hover:text-gray-600 transition-colors">
+                            Conditions Générales de vente
+                        </a>
+                        <a href="https://www.apc.fr/pages/contact"
+                            class="font-inter-bold text-sm text-black hover:text-gray-600 transition-colors">
+                            Nous contacter
+                        </a>
+                        <a href="https://www.apc.fr/policies/privacy-policy"
+                            class="font-inter-bold text-sm text-[#1c1c1c] uppercase hover:text-gray-600 transition-colors">
+                            Politique de confidentialité
+                        </a>
+                    </nav>
+                </section>
+
+                <!-- Social Media Links -->
+                <nav class="flex items-center space-x-4">
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="Instagram" class="w-6 h-6"
+                            src="/public/assets/instagram.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="YouTube" class="w-6 h-6"
+                            src="/public/assets/youtube.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="TikTok" class="w-6 h-6"
+                            src="/public/assets/tiktok.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="Facebook" class="w-6 h-6"
+                            src="/public/assets/facebook.png" />
+                    </a>
+                </nav>
+            </section>
+
+            <!-- Copyright -->
+            <section
+                class="mt-8 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <a href="https://www.apc.fr"
+                    class="font-inter-medium text-sm text-[#1c1c1c] hover:text-gray-600 transition-colors">
+                    www.apc.fr
+                </a>
+                <p class="font-inter-medium text-sm text-[#1c1c1c]">
+                    © copyright 2025
+                </p>
+            </section>
+        </section>
+    </footer>
+</body>
+
+</html>

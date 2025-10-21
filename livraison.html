@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.P.C. - Livraison</title>
+    <link href="/src/style.css" rel="stylesheet">
+
+<body class="bg-gray-50 text-[#101828]">
+    <!-- Nav -->
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <figure class="flex-shrink-0"><a href="index.html">
+                    <img alt="A.P.C. Logo" class="h-2 lg:h-4 w-14"
+                        src="/public/assets/logo.png" />
+                </a>
+            </figure>
+            <nav class="hidden lg:flex items-center gap-10">
+                <button class="font-inter-bold text-sm text-gray-400"><a href="index.html">E-shop</a></button>
+                <button class="font-inter-bold text-sm text-black">Commandes</button>
+            </nav>
+             <nav class="hidden lg:flex items-center space-x-0">
+                    <button class="p-2 hover:bg-gray-50 rounded"><a href="inscription.html">
+                        <img alt="Account" class="w-6 h-6"
+                            src="/public/assets/compte.png" />
+                            </a>
+                    </button>
+                    <button class="p-2 hover:bg-gray-50 rounded"><a href="panier.html">
+                        <img alt="Cart" class="w-5 h-5"
+                            src="/public/assets/panier.png" />
+                            </a>
+                    </button>
+                </nav>
+            <button id="menu-btn" class="lg:hidden p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+        <nav id="mobile-menu" class="lg:hidden hidden border-t border-gray-100">
+            <section class="max-w-7xl mx-auto px-4 py-4 grid gap-3">
+                <button class="text-left font-inter-bold text-sm text-gray-500"><a href="index.html">E-shop</a></button>
+                <button class="text-left font-inter-bold text-sm text-black">Commandes</button>
+            </section>
+        </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <!-- Fil d’ariane -->
+        <nav class="flex items-center gap-2 text-sm text-[#6a7282] mb-6">
+            <span><a href="panier.html"> Panier > </a></span>
+            <a class="underline" href="#"> Livraison > </a>
+            <span class="text-[#99a1af]">Paiement</span>
+        </nav>
+
+        <h1 class="font-arial-bold text-base text-black mb-6">Livraison</h1>
+
+        <!-- Carte principale -->
+        <section class="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 sm:p-8">
+            <!-- Bandeau vendeur + compteur -->
+            <section class="flex items-center justify-between text-sm text-[#4a5565] mb-4">
+                <span>Vendu et expédié par A.P.C</span>
+                <span>1 article</span>
+            </section>
+            <hr class="border-gray-200 mb-6" />
+
+            <!-- Ligne produit -->
+            <section class="flex items-center gap-4 sm:gap-6 mb-6">
+                <figure class="w-28 h-44 flex-shrink-0">
+                    <img alt="Jean Romy" class="w-full h-full object-cover bg-gray-100 rounded"
+                        src="/public/assets/jean romy 1.png" />
+                </figure>
+                <section class="flex-1">
+                    <h3 class="font-arial-regular text-base text-black uppercase mb-1">jean romy</h3>
+                    <p class="font-arial-regular text-base text-black mb-1">270.00 €</p>
+                    <p class="font-arial-regular text-sm text-[#4a5565]">TAILLE: XXS</p>
+                    <p class="font-arial-regular text-sm text-[#4a5565] mb-3">COULEUR: Bordeaux</p>
+
+                    <section class="flex items-center justify-between text-sm">
+                        <p class="font-arial-regular text-black">
+                            Livraison <span class="text-[#7e7e7e]">(300 g - 3kg)</span>
+                        </p>
+                        <p class="font-arial-regular text-black">Gratuite</p>
+                    </section>
+                    <section class="flex items-center justify-between text-sm">
+                        <p class="font-arial-regular text-black uppercase">Sous-total</p>
+                        <p class="font-arial-regular text-black">270 €</p>
+                    </section>
+                </section>
+            </section>
+            <hr class="border-gray-200 mb-6" />
+
+            <!-- Mode de livraison -->
+            <section class="mb-6">
+                <h2 class="font-arial-regular text-base text-black mb-3">Mode de livraison</h2>
+                <section class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <button id="mode-magasin"
+                        class="flex flex-col items-center justify-center gap-3 h-20 rounded-lg border border-black bg-[#f9f9f9]">
+                        <img alt="Magasin" class="w-6 h-6"
+                            src="/public/assets/magasin.png" />
+                        <span class="font-arial-regular text-sm text-black">Magasin</span>
+                    </button>
+                    <button id="mode-domicile"
+                        class="flex flex-col items-center justify-center gap-3 h-20 rounded-lg border border-gray-200 bg-white">
+                        <img alt="Domicile" class="w-6 h-6"
+                            src="/public/assets/domicile.png" />
+                        <span class="font-arial-regular text-sm text-black">Domicile</span>
+                    </button>
+                    <button id="mode-relais"
+                        class="flex flex-col items-center justify-center gap-3 h-20 rounded-lg border border-gray-200 bg-white">
+                        <img alt="Point relais" class="w-6 h-6"
+                            src="/public/assets/point relais.png" />
+                        <span class="font-arial-regular text-sm text-black">Point relais</span>
+                    </button>
+                </section>
+            </section>
+
+            <!-- Options de livraison -->
+            <section class="mb-6">
+                <h2 class="font-arial-regular text-base text-black mb-3">Options de livraison</h2>
+
+                <!-- Carte 1 -->
+                <label class="block rounded-xl border border-gray-200 p-5 mb-3 cursor-pointer">
+                    <section class="flex items-start justify-between">
+                        <p class="font-arial-bold text-[16px]">E-reservation : payez en magasin</p>
+                        <span class="font-arial-regular text-[16px] text-[#4a5565]">Gratuit</span>
+                    </section>
+                    <section class="mt-3">
+                        <p class="font-arial-regular text-[16px] text-[#6a7282]">Livraison estimée</p>
+                        <p class="font-arial-regular text-[16px] text-black">Lundi 20 octobre</p>
+                    </section>
+                </label>
+
+                <!-- Carte 2 (sélectionnée) -->
+                <label class="block rounded-xl border border-gray-200 p-5 relative">
+                    <input type="radio" name="option" checked class="absolute left-5 top-5 w-4 h-4 accent-black" />
+                    <section class="pl-8">
+                        <section class="flex items-start justify-between">
+                            <p class="font-arial-bold text-[16px]">Click & Collect : payez en ligne</p>
+                            <span class="font-arial-regular text-[16px] text-[#4a5565]">Gratuit</span>
+                        </section>
+                        <section class="mt-3">
+                            <p class="font-arial-regular text-[16px] text-[#6a7282]">Livraison estimée</p>
+                            <p class="font-arial-regular text-[16px] text-black">Lundi 20 octobre</p>
+                        </section>
+                    </section>
+                </label>
+            </section>
+
+            <!-- CTA -->
+            <button
+                class="w-full h-11 bg-black text-white rounded-md font-arial-bold text-sm uppercase hover:bg-black/85 transition-colors">
+                Passer à l’étape suivante
+            </button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+      <footer class="bg-white border-t border-gray-100 py-12 lg:py-16 mt-16">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-12">
+                <!-- Logo and Links -->
+                <section class="flex flex-col lg:flex-row items-start lg:items-center gap-8 lg:gap-12">
+                    <figure class="flex-shrink-0">
+                        <img alt="A.P.C. Logo" class="h-8 lg:h-10"
+                            src="/public/assets/logo.png" />
+                    </figure>
+
+                    <nav class="flex flex-col sm:flex-row gap-4 lg:gap-8">
+                        <a href="https://www.apc.fr/pages/conditions-generales-de-vente"
+                            class="font-inter-bold text-sm text-[#1c1c1c] uppercase hover:text-gray-600 transition-colors">
+                            Conditions Générales de vente
+                        </a>
+                        <a href="https://www.apc.fr/pages/contact"
+                            class="font-inter-bold text-sm text-black hover:text-gray-600 transition-colors">
+                            Nous contacter
+                        </a>
+                        <a href="https://www.apc.fr/policies/privacy-policy"
+                            class="font-inter-bold text-sm text-[#1c1c1c] uppercase hover:text-gray-600 transition-colors">
+                            Politique de confidentialité
+                        </a>
+                    </nav>
+                </section>
+
+                <!-- Social Media Links -->
+                <nav class="flex items-center space-x-4">
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="Instagram" class="w-6 h-6"
+                            src="/public/assets/instagram.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="YouTube" class="w-6 h-6"
+                            src="/public/assets/youtube.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="TikTok" class="w-6 h-6"
+                            src="/public/assets/tiktok.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="Facebook" class="w-6 h-6"
+                            src="/public/assets/facebook.png" />
+                    </a>
+                </nav>
+            </section>
+
+            <!-- Copyright -->
+            <section
+                class="mt-8 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <a href="https://www.apc.fr"
+                    class="font-inter-medium text-sm text-[#1c1c1c] hover:text-gray-600 transition-colors">
+                    www.apc.fr
+                </a>
+                <p class="font-inter-medium text-sm text-[#1c1c1c]">
+                    © copyright 2025
+                </p>
+            </section>
+        </section>
+    </footer>
+
+</body>
+
+</html>

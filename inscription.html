@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.P.C. - Créer un compte</title>
+   <link href="/src/style.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-[#f3f4f6] text-[#1a1a1a]">
+    <!-- Nav -->
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <section class="flex items-center gap-8 ">
+                <figure class="flex-shrink-0"><a href="index.html">
+                        <img alt="A.P.C. Logo" class="h-2 lg:h-4 w-14"
+                            src="/public/assets/logo.png"  />
+                    </a>
+                </figure>
+                <section class="hidden lg:flex items-center space-x-8 xl:space-x-12">
+                    <a href="index.html"
+                        class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">TOUTES LES
+                        CATÉGORIES</a>
+                    <a href="denim.html"
+                        class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">DENIM</a>
+                    <a class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">JUPES & ROBES
+                        FEMMES</a>
+                    <a class="font-inter-bold text-sm text-gray-400 hover:text-gray-600 transition-colors">PULLS &
+                        SWEATS</a>
+                </section>
+            </section>
+            <nav class="hidden lg:flex items-center space-x-0">
+                    <button class="p-2 hover:bg-gray-50 rounded"><a href="inscription.html">
+                        <img alt="Account" class="w-6 h-6"
+                            src="/public/assets/compte.png" />
+                            </a>
+                    </button>
+                    <button class="p-2 hover:bg-gray-50 rounded"><a href="panier.html">
+                        <img alt="Cart" class="w-5 h-5"
+                            src="/public/assets/panier.png" />
+                            </a>
+                    </button>
+                </nav>
+            <button id="menu-btn" class="lg:hidden p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+        <nav id="mobile-menu" class="lg:hidden hidden border-t border-gray-100">
+            <section class="max-w-7xl mx-auto px-4 py-4 grid gap-3">
+                <button class="text-left font-inter-bold text-sm text-gray-700">TOUTES LES CATÉGORIES</button>
+                <button class="text-left font-inter-bold text-sm text-gray-500">DENIM</button>
+                <button class="text-left font-inter-bold text-sm text-gray-500">JUPES & ROBES FEMMES</button>
+                <button class="text-left font-inter-bold text-sm text-gray-500">PULLS & SWEATS</button>
+            </section>
+        </nav>
+    </header>
+
+    <!-- Form card -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <section class="bg-white rounded-md shadow-md max-w-3xl mx-auto px-6 sm:px-10 py-10">
+            <h1 class="font-arial-bold text-[20px] text-center mb-8">Créer un compte</h1>
+
+            <form class="grid gap-6">
+                <!-- Row 1 -->
+                <section class=" grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <label class="grid gap-2">
+                        <span class="font-arial-regular text-sm">Prénom *</span>
+                        <input class="h-11 rounded-md border border-[#d9d9d9] px-4" type="text" placeholder="Prénom"
+                            value="Cloé" required />
+                    </label>
+                    <label class="grid gap-2">
+                        <span class="font-arial-regular text-sm">Nom *</span>
+                        <input class="h-11 rounded-md border border-[#d9d9d9] px-4" type="text" placeholder="Nom"
+                            value="Delage" required />
+                    </label>
+                </section>
+
+                <!-- Row 2 -->
+                <section class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <label class="grid gap-2">
+                        <span class="font-arial-regular text-sm">Email *</span>
+                        <input class="h-11 rounded-md border border-[#d9d9d9] px-4" type="email"
+                            placeholder="email@domaine.com" value="cloedelage@gmail.com" required />
+                    </label>
+                    <label class="grid gap-2">
+                        <span class="font-arial-regular text-sm">Téléphone *</span>
+                        <input class="h-11 rounded-md border border-[#d9d9d9] px-4" type="tel" placeholder="06..."
+                            value="0785963157" required />
+                    </label>
+                </section>
+
+                <!-- Row 3 -->
+                <label class="grid gap-2">
+                    <span class="font-arial-regular text-sm">Adresse *</span>
+                    <input class="h-11 rounded-md border border-[#d9d9d9] px-4" type="text" placeholder="Adresse"
+                        value="47 rue de LouisVI" required />
+                </label>
+
+                <!-- Row 4 -->
+                <section class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <label class="grid gap-2">
+                        <span class="font-arial-regular text-sm">Ville *</span>
+                        <input class="h-11 rounded-md border border-[#d9d9d9] px-4" type="text" placeholder="Ville"
+                            value="Nice" required />
+                    </label>
+                    <label class="grid gap-2">
+                        <span class="font-arial-regular text-sm">Code postal *</span>
+                        <input class="h-11 rounded-md border border-[#d9d9d9] px-4" type="text" inputmode="numeric"
+                            pattern="[0-9]{5}" placeholder="00000" value="06000" required />
+                    </label>
+                </section>
+
+                <!-- Row 5 -->
+                <section class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <label class="grid gap-2">
+                        <span class="font-arial-regular text-sm">Mot de passe *</span>
+                        <input class="h-11 rounded-md border border-[#d9d9d9] px-4" type="password"
+                            placeholder="********" required />
+                    </label>
+                    <label class="grid gap-2">
+                        <span class="font-arial-regular text-sm">Confirmer le mot de passe *</span>
+                        <input class="h-11 rounded-md border border-[#d9d9d9] px-4" type="password"
+                            placeholder="********" required />
+                    </label>
+                </section>
+
+                <!-- Submit -->
+                <button
+                    class="mt-2 h-12 bg-[#1a1a1a] text-white rounded-md font-arial-regular hover:bg-black/80 transition-colors"><a
+                        href="connexion.html">
+                        Créer mon compte
+                    </a>
+                </button>
+
+                <!-- Link -->
+                <p class="text-center font-arial-regular text-sm underline"><a href="connexion.html">
+                        Vous avez déjà un compte ? Se connecter
+                    </a>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+     <footer class="bg-white border-t border-gray-100 py-12 lg:py-16 mt-16">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-12">
+                <!-- Logo and Links -->
+                <section class="flex flex-col lg:flex-row items-start lg:items-center gap-8 lg:gap-12">
+                    <figure class="flex-shrink-0">
+                        <img alt="A.P.C. Logo" class="h-8 lg:h-10"
+                            src="/public/assets/logo.png" />
+                    </figure>
+
+                    <nav class="flex flex-col sm:flex-row gap-4 lg:gap-8">
+                        <a href="https://www.apc.fr/pages/conditions-generales-de-vente"
+                            class="font-inter-bold text-sm text-[#1c1c1c] uppercase hover:text-gray-600 transition-colors">
+                            Conditions Générales de vente
+                        </a>
+                        <a href="https://www.apc.fr/pages/contact"
+                            class="font-inter-bold text-sm text-black hover:text-gray-600 transition-colors">
+                            Nous contacter
+                        </a>
+                        <a href="https://www.apc.fr/policies/privacy-policy"
+                            class="font-inter-bold text-sm text-[#1c1c1c] uppercase hover:text-gray-600 transition-colors">
+                            Politique de confidentialité
+                        </a>
+                    </nav>
+                </section>
+
+                <!-- Social Media Links -->
+                <nav class="flex items-center space-x-4">
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="Instagram" class="w-6 h-6"
+                            src="/public/assets/instagram.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="YouTube" class="w-6 h-6"
+                            src="/public/assets/youtube.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="TikTok" class="w-6 h-6"
+                            src="/public/assets/tiktok.png" />
+                    </a>
+                    <a href="#" class="p-2 hover:bg-gray-50 rounded transition-colors">
+                        <img alt="Facebook" class="w-6 h-6"
+                            src="/public/assets/facebook.png" />
+                    </a>
+                </nav>
+            </section>
+
+            <!-- Copyright -->
+            <section
+                class="mt-8 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <a href="https://www.apc.fr"
+                    class="font-inter-medium text-sm text-[#1c1c1c] hover:text-gray-600 transition-colors">
+                    www.apc.fr
+                </a>
+                <p class="font-inter-medium text-sm text-[#1c1c1c]">
+                    © copyright 2025
+                </p>
+            </section>
+        </section>
+    </footer>
+
+
+</body>
+
+</html>
