@@ -15,7 +15,7 @@ export default defineConfig({
        profil: resolve(__dirname, "profil.html"),
        livraison: resolve(__dirname, "livraison.html"),
        inscription: resolve(__dirname, "inscription.html"),
-       desciptions: resolve(__dirname, "descriptions_produits.html"),
+       desciptions: resolve(__dirname, "description_produits.html"),
        connexion: resolve(__dirname, "connexion.html"),
      },
    },
